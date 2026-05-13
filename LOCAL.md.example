@@ -1,0 +1,38 @@
+# LOCAL — 본인 환경 기록 템플릿
+
+> 이 파일을 `LOCAL.md`로 복사 후 자기 값으로 채우십시오. `LOCAL.md`는 `.gitignore`로 추적 제외됩니다.
+
+## 데이터 디스크
+
+| 항목 | 값 |
+|---|---|
+| 모델 | <예: ADATA SP920SS> |
+| SerialNumber | `<예: ABCDEFGHIJ>` |
+| 용량 | <예: 256 GB> |
+| 포맷 | GPT + ext4 |
+| 라벨 | `<예: wsldata>` |
+| UUID | `<예: 00000000-0000-0000-0000-000000000000>` |
+| 마운트 지점 | `/mnt/data` |
+
+## WSL 환경
+
+| 항목 | 값 |
+|---|---|
+| distro | <예: Ubuntu> |
+| 사용자 계정 | <예: $USER> |
+| 기본 distro 설정 | `wsl --set-default <distro>` |
+
+## 빠른 명령 (본인 값으로)
+
+```powershell
+.\Setup-WSL-DataMount.ps1 -SerialNumber '<SN>' -Force
+```
+
+```bash
+sudo bash /mnt/<drive>/<path>/wsl-data-mount/Setup-Ubuntu-DataMount.sh
+```
+
+## 비고
+
+- 디스크 교체 시점에 위 값들 갱신
+- USB 백업본에는 본 `LOCAL.md`도 포함되므로 분실에 주의

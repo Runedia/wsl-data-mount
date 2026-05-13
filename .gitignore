@@ -1,0 +1,34 @@
+# 런타임 산출물 — 이 저장소는 정적 자산만 추적한다
+mount.log
+*.log
+
+# 부트스트랩이 만드는 백업 파일
+*.bak
+*.bak-*
+*.bak2
+
+# 임시
+*.tmp
+*.swp
+*~
+
+# OS 잡파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# 에디터
+.vscode/
+.idea/
+*.iml
+
+# 사용자 비밀 / 환경별 오버라이드
+*.local
+*.local.*
+.env
+.env.*
+secrets/
+
+# 사용자 디스크 정보 — LOCAL.md.example을 LOCAL.md로 복사해 자기 값으로 채움
+LOCAL.md

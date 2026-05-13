@@ -1,0 +1,16 @@
+# 전역 텍스트 정규화: working tree는 OS 기본, 저장소 내부는 LF
+* text=auto eol=lf
+
+# Bash 스크립트는 무조건 LF (Ubuntu에서 실행)
+*.sh text eol=lf
+
+# PowerShell 스크립트는 BOM 포함 UTF-8 유지. CRLF/LF 어느 쪽이든 파서 무관하므로 LF로 통일
+*.ps1 text eol=lf working-tree-encoding=UTF-8
+
+# Markdown
+*.md text eol=lf
+
+# 이미지/바이너리 (필요 시 추가)
+*.png binary
+*.jpg binary
+*.ico binary
